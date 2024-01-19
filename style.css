@@ -1,1 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: yellow;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 2% 0 2%;
+}
+
+header section:nth-child(2) {
+    justify-self: end;
+}
+
+button {
+    width: 5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    min-height: 80vh;
+}
+
+main aside,
+.content-container {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-top: 1rem;
+    gap: 2%;
+}
+
+footer {
+    background-color: gray;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
